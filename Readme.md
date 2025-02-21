@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Юрий](https://up.htmlacademy.ru/adaptive-individual/2/user/2520785).
-* Наставник: `Виктория Никитина`.
+* Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273).
 
 ---
 
