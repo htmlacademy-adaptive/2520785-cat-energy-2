@@ -6,7 +6,7 @@
     padding: 0;
     width: 324px;
     background-color: #f2f2f2;
-    padding: 11px 20px 74px;
+    padding: 11px 38px 40px;
     box-sizing: border-box;
   }
 
@@ -52,6 +52,7 @@
     width: 100%;
     max-width: unset;
     min-width: unset;
+    margin-bottom: 26px;
   }
 }
 
@@ -61,6 +62,7 @@
 
   @media (min-width: $tablet) {
     width: 200px;
+    margin-bottom: 18px;
   }
 }
 
@@ -86,9 +88,9 @@
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 24px;
-    width: 126px;
+    width: 130px;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 4px;
   }
 }
 
@@ -112,7 +114,7 @@
     line-height: 20px;
     border-bottom: 1px solid #cdcdcd;
     padding-bottom: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
 }
 
@@ -132,7 +134,6 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet) {
-    width: 88%;
     margin: 0 auto;
   }
 

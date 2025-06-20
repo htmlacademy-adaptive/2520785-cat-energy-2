@@ -1,0 +1,50 @@
+.stock-news {
+  padding-top: 41px;
+}
+
+.stock-news__title {
+  margin: 0;
+}
+
+.stock-news__title {
+  padding: 0;
+}
+
+.stock-news__text {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  width: 280px;
+  margin: 0 auto;
+  padding: 33px 0 23px;
+}
+
+.stock-news__form {
+  margin: 0 20px 40px;
+}
+
+.stock-news__link {
+  margin: 0;
+  padding: 15px 0;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.stock-news__input {
+  width: 100%;
+  padding: 24px 12px 15px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #cdcdcd;
+
+  &::placeholder {
+    color: #444444;
+    font-family: $oswald;
+    font-size: 20px;
+    line-height: 100%;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}

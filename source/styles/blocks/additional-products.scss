@@ -3,7 +3,7 @@
 }
 
 .additional-products__title {
-  margin-bottom: 49px;
+  margin-bottom: 35px;
 
   @media(min-width: $tablet) {
     margin-bottom: 80px;
@@ -23,9 +23,8 @@
 }
 
 .additional-products__items {
-  margin: 0 0 19px;
-  padding: 13px 0 0;
   border-top: 1px solid #cdcdcd;
+  padding: 13px 0 18px;
 
   @media (min-width: $tablet) {
     margin: 0 0 -1px;
@@ -35,9 +34,7 @@
 }
 
 .additional-products__container {
-  display: flex;
   justify-content: space-between;
-  padding-bottom: 25px;
 }
 
 .additional-products__caption {
@@ -92,21 +89,53 @@
 .additional-products__block {
   position: relative;
   width: 280px;
+  height: 290px;
+  margin: 34px auto 0;
+  background-image: image-set(
+      url("../../images/cat-case/cat-case-m@1x.webp") type("image/webp") 1x,
+      url("../../images/cat-case/cat-case-m@2x.webp") type("image/webp") 2x,
+      url("../../images/cat-case/cat-case-m@1x.jpeg") type("image/jpeg") 1x,
+      url("../../images/cat-case/cat-case-m@2x.jpeg") type("image/jpeg") 2x);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 1;
 
-  &::before {
+  &::after {
     content: "";
-    width: 280px;
-    height: 290px;
-    background-image: image-set(
-        url ("../../images/cat-case/cat-case-m@1x.webp") 1x type("image/webp"),
-        url ("../../images/cat-case/cat-case-m@2x.webp") 2x type("image/webp"),
-        url ("../../images/cat-case/cat-case-m@1x.jpeg") 1x type("image/jpeg"),
-        url ("../../images/cat-case/cat-case-m@2x.jpeg") 2x type("image/jpeg"));
-    background-repeat: no-repeat;
-    background-position: 0 0;
     position: absolute;
-    top: 0;
+    width: 100%;
+    height: 100%;
+    background: $thema;
+    opacity: 0.85;
     left: 0;
-    z-index: 1;
+    top: 0;
+    z-index: 5;
   }
+}
+
+.additional-products__click {
+  text-decoration: none;
+}
+
+.additional-products__gift {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 46px;
+  padding-top: 59px;
+  position: relative;
+  z-index: 10;
+
+}
+
+.additional-products__text {
+  font-family: $lato;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  width: 161px;
+  margin: 0;
+  padding: 0;
 }
