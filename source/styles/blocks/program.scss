@@ -3,7 +3,7 @@
   margin: 20px;
 
   @media (min-width: $tablet) {
-    margin: 0 30px 30px;
+    margin: 0 30px;
     background: none;
   }
 
@@ -20,6 +20,8 @@
   @media (min-width: $desktop) {
     display: flex;
     justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto;
   }
 }
 

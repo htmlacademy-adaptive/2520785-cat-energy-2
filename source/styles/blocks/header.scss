@@ -30,6 +30,11 @@
     top: 25px;
     left: 20px;
   }
+
+  @media (min-width: $desktop) {
+    top: 56px;
+    left: 0;
+  }
 }
 
 .header__logo-catalog {
@@ -40,5 +45,10 @@
   @media (min-width: $tablet) {
     top: 12px;
     left: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    top: 55px;
+    left: 0;
   }
 }

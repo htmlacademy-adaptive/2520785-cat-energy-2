@@ -1,5 +1,9 @@
 .stock-news {
   padding-top: 41px;
+
+  @media(min-width: $tablet) {
+    padding: 41px 0 79px;
+  }
 }
 
 .stock-news__title {
@@ -8,6 +12,10 @@
 
 .stock-news__title {
   padding: 0;
+
+  @media(min-width: $tablet) {
+    padding: 0 0 0 30px;
+  }
 }
 
 .stock-news__text {
@@ -19,32 +27,73 @@
   width: 280px;
   margin: 0 auto;
   padding: 33px 0 23px;
+
+  @media(min-width: $tablet) {
+    margin: 0 auto;
+    padding: 67px 0 24px;
+    font-size: 24px;
+    line-height: 32px;
+    width: 632px;
+  }
 }
 
 .stock-news__form {
   margin: 0 20px 40px;
+
+  @media(min-width: $tablet) {
+    margin: 0 auto;
+    width: 637px;
+  }
 }
 
-.stock-news__link {
-  margin: 0;
+.stock-news__button {
   padding: 15px 0;
   font-size: 20px;
   line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  background-color: $thema;
+  margin: 15px 0 0;
+  font-family: $oswald;
+  width: 281px;
+  border: none;
+
+  @media(min-width: $tablet) {
+    width: 256px;
+    margin: 0;
+  }
 }
 
 .stock-news__input {
   width: 100%;
-  padding: 24px 12px 15px;
-  margin-bottom: 16px;
+  padding: 12px;
+  margin-bottom: 1px;
   box-sizing: border-box;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e7e7e7;
+  color: #444444;
+  font-family: $oswald;
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: 400;
+  text-transform: uppercase;
 
-  &::placeholder {
-    color: #444444;
-    font-family: $oswald;
-    font-size: 20px;
-    line-height: 100%;
-    font-weight: 400;
-    text-transform: uppercase;
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border-color: transparent;
+    outline: 2px solid #444444;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border-color: transparent;
+    outline: 2px solid #ff8282;
+  }
+
+  @media(min-width: $tablet) {
+    width: 376px;
   }
 }

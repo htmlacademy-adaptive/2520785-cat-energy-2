@@ -23,8 +23,13 @@
     padding-left: 30px;
 
     &::after {
-      top: 12px;
+      top: 15px;
     }
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 40px;
+    line-height: 40px;
   }
 }
 
@@ -34,4 +39,8 @@
   background: #ffffff;
   position: relative;
   z-index: 5;
+
+  @media (min-width: $tablet) {
+    padding: 0 40px;
+  }
 }
