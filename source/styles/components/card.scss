@@ -1,0 +1,255 @@
+.card {
+  position: relative;
+  padding: 20px 0 24px;
+
+  @media (min-width: $tablet) {
+    width: 324px;
+    background-color: #f2f2f2;
+    padding: 11px 38px 40px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop) {
+    width: 245px;
+    padding: 10px 38px 40px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    right: -20px;
+    border-top: 1px solid #ebebeb;
+
+    @media (min-width: $tablet) {
+      border-top: none;
+      height: 80px;
+      width: 100%;
+      left: 0;
+      right: unset;
+      top: 0;
+      background: #ffffff;
+      z-index: 1;
+    }
+  }
+}
+
+.card__container {
+  margin: 0 auto;
+  min-width: 280px;
+  max-width: 350px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: unset;
+    min-width: unset;
+    margin-bottom: 26px;
+  }
+}
+
+
+.card__image-link {
+  width: 140px;
+
+  @media (min-width: $tablet) {
+    width: 200px;
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+}
+
+.card__wrapper {
+  width: 140px;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
+}
+
+.card__title {
+  display: block;
+  padding-bottom: 16px;
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #222222;
+  text-transform: uppercase;
+  width: 96px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 24px;
+    width: 130px;
+    text-align: center;
+    margin: 0 auto 4px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+    margin: 0 auto 24px;
+  }
+}
+
+.card__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card__item {
+  font-family: $lato;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #444444;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+    border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 5px;
+    margin-bottom: 6px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 6px;
+  }
+}
+
+.card__link {
+  display: block;
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  background-color: $thema;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 15px 0 0;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+  }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.card__add-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  padding-top: 5px;
+}
+
+.card__text-main {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #111111;
+  margin: 19px 0 10px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+    padding-bottom: 23px;
+    width: 170px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 26px;
+  }
+}
+
+.card__text {
+  font-family: $lato;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #444444;
+  margin: 0;
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 18px;
+    width: 170px;
+    text-align: center;
+    margin: 0 0 66px;
+  }
+}
+
+.card__link-disabled {
+  display: block;
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #444444;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 15px 0 0;
+
+  @media (min-width: $tablet) {
+    margin: 15px 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 169px;
+    margin-top: 24px;
+  }
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+  }
+}
+
+.card__image-add {
+  @media (min-width: $tablet) {
+    padding-top: 33px;
+    padding-bottom: 48px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 44px;
+    padding-bottom: 38px;
+  }
+}

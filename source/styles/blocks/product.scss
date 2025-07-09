@@ -17,7 +17,14 @@
     &::before {
       content: "";
       position: absolute;
-      background: url("../../images/product-tablet.png") no-repeat 0 0;
+      background:
+        image-set(
+          url("../../images/product/product-tablet@1x.webp") 1x type("image/webp"),
+          url("../../images/product/product-tablet@2x.webp") 2x type("image/webp"),
+          url("../../images/product/product-tablet@1x.png") 1x type("image/png"),
+          url("../../images/product/product-tablet@2x.png") 2x type("image/png"));
+      background-repeat: no-repeat;
+      background-position: 0 0;
       width: 709px;
       height: 609px;
       z-index: 1;
@@ -35,31 +42,29 @@
     &::before {
       width: 50%;
       transform: translateX(0);
-      height: calc(100% + 163px);
+      height: calc(100% + 125px);
       bottom: unset;
-      top: -163px;
-      background: url(../../images/index-background-desktop.jpg) no-repeat 0 0;
+      top: -125px;
+      background: url("../../images/index-background-desktop.jpg") no-repeat 0 0;
       background-size: auto 100%;
     }
 
     &::after {
       content: "";
       width: 50%;
-      height: calc(100% + 163px);
+      height: calc(100% + 125px);
       bottom: unset;
-      top: -163px;
+      top: -125px;
       background: $thema;
       opacity: 0.85;
       position: absolute;
       z-index: 5;
       left: 50%;
-
     }
   }
 }
 
 .product__container {
-
   @media (min-width: $desktop) {
     width: 1220px;
     margin: 0 auto;
@@ -76,7 +81,14 @@
       position: absolute;
       left: 447px;
       top: 23px;
-      background: url("../../images/product-desktop.png") no-repeat 0 0;
+      background:
+        image-set(
+          url("../../images/product/product-desktop@1x.webp") 1x type("image/webp"),
+          url("../../images/product/product-desktop@2x.webp") 2x type("image/webp"),
+          url("../../images/product/product-desktop@1x.png") 1x type("image/png"),
+          url("../../images/product/product-desktop@1x.png") 2x type("image/png"));
+      background-position: 0 0;
+      background-repeat: no-repeat;
     }
   }
 }
@@ -99,12 +111,18 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    background: url("../../images/product-mobile.png") no-repeat 0 0;
+    background:
+      image-set(
+        url("../../images/product/product-mobile@1x.webp") 1x type("image/webp"),
+        url("../../images/product/product-mobile@2x.webp") 2x type("image/webp"),
+        url("../../images/product/product-mobile@1x.png") 1x type("image/png"),
+        url("../../images/product/product-mobile@2x.png") 2x type("image/png"));
+    background-repeat: no-repeat;
+    background-position: 0 0;
     z-index: 20;
 
     @media (min-width: $tablet) {
       display: none;
-
     }
   }
 }
@@ -229,7 +247,6 @@
     position: relative;
     z-index: 10;
     display: block;
-    padding: 0;
     margin: 0;
     font-size: 20px;
     font-family: $oswald;

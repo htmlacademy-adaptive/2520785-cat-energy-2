@@ -24,7 +24,7 @@
   line-height: 20px;
   letter-spacing: 0%;
   text-transform: uppercase;
-  color: black;
+  color: #000000;
   text-decoration: none;
   display: block;
   text-align: center;
@@ -34,18 +34,32 @@
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;
+    padding: 9px 0 20px;
   }
 
   @media (min-width: $desktop) {
     font-size: 20px;
     line-height: 100%;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #000000;
   }
 }
 
-.menu__link--line {
+.menu--index .menu__link {
+  @media (min-width: $tablet) {
+    padding: 23px 0;
+  }
 
+  @media (min-width: $desktop) {
+    color: #ffffff;
+
+    &--active::after {
+      border-color: #ffffff;
+    }
+  }
+}
+
+.menu__link--active {
   @media (min-width: $tablet) {
     &::after {
       content: "";
@@ -53,19 +67,13 @@
       left: 0;
       bottom: 12px;
       border: 1px solid $thema;
-      width: 62px;
+      width: 100%;
     }
   }
 
   @media (min-width: $desktop) {
     &::after {
-      content: "";
-      position: absolute;
-      left: 2px;
-      bottom: 11px;
-      border: 1px solid #ffffff;
-      width: 66px;
+      bottom: 7px;
     }
   }
 }
-
