@@ -3,7 +3,6 @@
   padding: 20px 0 24px;
 
   @media (min-width: $tablet) {
-    padding: 0;
     width: 324px;
     background-color: #f2f2f2;
     padding: 11px 38px 40px;
@@ -12,7 +11,7 @@
 
   @media (min-width: $desktop) {
     width: 245px;
-    padding: 0 20px 40px;
+    padding: 10px 38px 40px;
   }
 
   &::before {
@@ -64,6 +63,12 @@
     width: 200px;
     margin-bottom: 18px;
   }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
 }
 
 .card__wrapper {
@@ -92,6 +97,11 @@
     text-align: center;
     margin: 0 auto 4px;
   }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+    margin: 0 auto 24px;
+  }
 }
 
 .card__list {
@@ -116,6 +126,10 @@
     padding-bottom: 5px;
     margin-bottom: 6px;
   }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 6px;
+  }
 }
 
 .card__link {
@@ -137,13 +151,14 @@
     margin: 0 auto;
   }
 
-  @media (min-width: $tablet) {
-
+  &:hover {
+    background-color: #5eaa2f;
   }
-}
 
-.card__wrap {
-  @media (min-width: $tablet) {}
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .card__add-link {
@@ -152,8 +167,6 @@
   align-items: center;
   text-decoration: none;
   padding-top: 5px;
-
-  @media (min-width: $tablet) {}
 }
 
 .card__text-main {
@@ -172,6 +185,10 @@
     padding-bottom: 23px;
     width: 170px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 26px;
   }
 }
 
@@ -210,12 +227,29 @@
   @media (min-width: $tablet) {
     margin: 15px 0 0;
   }
+
+  @media (min-width: $desktop) {
+    width: 169px;
+    margin-top: 24px;
+  }
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+  }
 }
 
 .card__image-add {
-
   @media (min-width: $tablet) {
     padding-top: 33px;
     padding-bottom: 48px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 44px;
+    padding-bottom: 38px;
   }
 }

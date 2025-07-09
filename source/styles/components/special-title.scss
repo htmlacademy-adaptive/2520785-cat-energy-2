@@ -30,6 +30,10 @@
   @media (min-width: $desktop) {
     font-size: 40px;
     line-height: 40px;
+
+    &::after {
+      top: 18px;
+    }
   }
 }
 

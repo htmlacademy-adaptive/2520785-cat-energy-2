@@ -9,6 +9,7 @@
     width: 500px;
     box-sizing: border-box;
     padding-left: 22px;
+    margin-left: auto;
   }
 }
 
@@ -18,7 +19,7 @@
   right: 21px;
   width: 24px;
   height: 24px;
-  background-image: url(../../images/mobile-open.svg);
+  background-image: url("../../images/mobile-open.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;

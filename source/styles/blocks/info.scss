@@ -13,7 +13,6 @@
       margin: 0;
       padding: 0;
       border: none;
-
     }
   }
 }
@@ -82,7 +81,6 @@
 
   &::before {
     content: "";
-    display: block;
     width: 60px;
     height: 60px;
     background-color: $thema;
@@ -126,21 +124,17 @@
     }
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     width: 248px;
 
     &::after {
       min-width: 130px;
     }
   }
-
 }
-
-
 
 .info__item--nutrients::before {
   content: url("../../images/info/nutrients.svg");
-
 }
 
 .info__item--powder::before {

@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin: 0 110px 71px 110px;
+    margin: 0 110px 71px;
     padding: 0;
   }
 }
@@ -27,7 +27,7 @@
 
 .program__item {
   list-style: none;
-  padding: 29px 20px 20px;
+  padding: 29px 20px 22px;
   background-color: #f2f2f2;
   margin: 0 0 20px;
 
@@ -116,7 +116,7 @@
   @media (min-width: $desktop) {
     font-size: 36px;
     line-height: 36px;
-    padding: 48px 0px 51px 161px;
+    padding: 48px 0 51px 161px;
 
     &::before {
       display: none;
@@ -227,7 +227,6 @@
     width: 340px;
     min-height: 96px;
     padding: 23px 0 38px;
-
   }
 
   @media (min-width: $desktop) {

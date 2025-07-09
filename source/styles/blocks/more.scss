@@ -1,0 +1,125 @@
+.more {
+  position: relative;
+
+  &::before {
+    content: "";
+    border-top: 1px solid #ebebeb;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    right: -20px;
+  }
+
+  @media (min-width: $tablet) {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.more__wrap {
+  padding-top: 21px;
+
+  @media (min-width: $tablet) {
+    padding-top: 33px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 44px;
+  }
+}
+
+.more__add-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  padding-top: 5px;
+}
+
+.more__image {
+  @media (min-width: $tablet) {
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 38px;
+  }
+}
+
+.more__text-main {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #111111;
+  margin: 19px 0 10px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+    padding-bottom: 23px;
+    width: 170px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 26px;
+  }
+}
+
+.more__text {
+  font-family: $lato;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #444444;
+  margin: 0;
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 18px;
+    width: 170px;
+    text-align: center;
+    margin: 0 0 66px;
+  }
+}
+
+.more__link-disabled {
+  display: block;
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #444444;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 15px 0 0;
+
+  @media (min-width: $tablet) {
+    margin: 15px 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 170px;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+    margin: 24px auto 0;
+  }
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+  }
+}

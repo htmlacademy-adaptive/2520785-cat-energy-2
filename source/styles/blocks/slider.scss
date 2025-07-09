@@ -31,7 +31,7 @@
   background-color: #eaeaea;
   transition: width 1s ease;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     &::before {
       content: "";
       width: 100%;
@@ -43,8 +43,9 @@
     }
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     background-color: #f2f2f2;
+
     &::before {
       height: 135px;
     }
@@ -98,13 +99,21 @@
     @media (min-width: $tablet) {
       height: 512px;
     }
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      background-color: #ebebeb;
+    }
   }
 
   &::after {
     content: "";
     width: 36px;
     height: 36px;
-    background-image: url(../../images/arrow-slider.svg);
+    background-image: url("../../images/arrow-slider.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-color: #ffffff;
